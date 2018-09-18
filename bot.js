@@ -7,7 +7,7 @@ client.on('ready', () ==> {
 
 client.on('message', message () ==> {
 	  if (message.content == 'pek'){
-	  message.reply('ahu');
+	  	message.reply('ahu');
 	  }
 });
 	  
