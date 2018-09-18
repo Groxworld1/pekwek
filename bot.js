@@ -1,9 +1,6 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client({disableEveryone: true});
 
-var Discord = require('discord.io');
-var logger = require('winston');
-var auth = require('./auth.json');
 // Configure logger settings
 logger.remove(logger.transports.Console);
 logger.add(new logger.transports.Console, {
