@@ -1,3 +1,6 @@
+const Discord = require("discord.js");
+const bot = new Discord.Client({disableEveryone: true});
+
 var Discord = require('discord.io');
 var logger = require('winston');
 var auth = require('./auth.json');
