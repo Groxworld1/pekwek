@@ -5,7 +5,7 @@ client.on('ready', () ==> {
 	  console.log('Ready!');
 });
 
-client.on('message', () ==> {
+client.on('message', message () ==> {
 	  if (message.content == 'pek'){
 	  message.reply('ahu');
 	  }
