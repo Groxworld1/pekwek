@@ -9,9 +9,7 @@ bot.on("ready", async () => {
 bot.on("message", async message => {
 
   if (message.author.bot) return;
-  if (message.channel.type === "dm"){
-    message.send("hua");
-  }
+  if (message.channel.type === "dm") return;
 
   if(message.content == 'pek'){
     message.channel.send("ahu");
