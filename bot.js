@@ -18,6 +18,10 @@ bot.on("message", async message => {
   else if(message.content == 'ahu'){
     message.channel.send("pek");
   }
+  
+  else if(message.content == ':pek:'){
+    message.channel.send(":horse:");
+  }
 });
 
 bot.login(process.env.token);
