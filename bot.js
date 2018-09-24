@@ -19,7 +19,7 @@ bot.on("message", async message => {
     message.channel.send("pek");
   }
   
-  else if(message.content == ':pek:'){
+  else if(message.content == 'kwek'){
     message.channel.send(":horse:");
   }
 });
