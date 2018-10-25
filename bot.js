@@ -10,23 +10,13 @@ bot.on("ready", async () => {
   bot.guilds.forEach((guild) => {
     console.log("- " + guild.name);
   })
-
-  guild.channels.forEach((channel) => {
-    console.log(" - ${channel.name} (${channel.type} - ${channel.id}");
-  })
   
   bot.user.setActivity(`with ducks`);
 });
 
 bot.on("message", async message => {
-  
-  if(message.content == 'pek'){
-    message.channel.send("ahu");
-  }
-  
-  else if(message.content == 'ahu'){
-    message.channel.send("pek");
-  }
+  var testChannel = bot.channels.get("test_channel");
+  testChannel.send("pek");
 });
 
 bot.login(process.env.token);
