@@ -8,12 +8,8 @@ bot.on("ready", async () => {
 
 bot.on("message", async message => {
 
-  if(message.content == 'f'){
-    message.channel.send("q");
-  }
-  
-  else if(message.content == 'a'){
-    message.channel.send("o");
+  if(message.content == 'pek'){
+    message.channel.send("ahu");
   }
 });
 
