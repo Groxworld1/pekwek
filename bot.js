@@ -17,7 +17,7 @@ bot.on("ready", () => {
 
 bot.on("message", (receivedMessage) => {
   
-  var testChannel = client.channels.get("315142564057579521");
+  var testChannel = bot.channels.get("315142564057579521");
   
   if (receivedMessage.author.id == "187880052178944000"){
     return;
