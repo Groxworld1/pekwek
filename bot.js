@@ -19,12 +19,18 @@ bot.on("message", (receivedMessage) => {
   
   var testChannel = bot.channels.get("315142564057579521");
   
+  /*
   if (receivedMessage.author == bot.user){
     return;
   }
+  */
   
-  else if(receivedMessage.content == "pek"){
+  if(receivedMessage.content == "pek"){
     receivedMessage.channel.send("ahu");
+  }
+  
+  else if(receivedMessage.content == "ahu"){
+    receivedMessage.channel.send("pek");
   }
     
   receivedMessage.channel.send("Message received " + receivedMessage.content);
