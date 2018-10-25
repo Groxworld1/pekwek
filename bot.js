@@ -19,11 +19,15 @@ bot.on("message", (receivedMessage) => {
   
   var testChannel = bot.channels.get("315142564057579521");
   
-  if (receivedMessage.author.id == "187880052178944000"){
+  if (receivedMessage.author == bot.user){
     return;
   }
+  
+  else if(receivedMessage.content == "pek"){
+    receivedMessage.channel.send("ahu");
+  }
     
-  receivedMessage.testChannel.send("Message received " + receivedMessage.content);
+  receivedMessage.channel.send("Message received " + receivedMessage.content);
 });
 
 bot.login(process.env.token);
