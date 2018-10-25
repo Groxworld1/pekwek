@@ -8,12 +8,12 @@ bot.on("ready", async () => {
 
 bot.on("message", async message => {
 
-  if(message.content == 'pek'){
-    message.channel.send("ahu");
+  if(message.content == 'o'){
+    message.channel.send("a");
   }
   
-  else if(message.content == 'ahu'){
-    message.channel.send("pek");
+  else if(message.content == 'a'){
+    message.channel.send("o");
   }
 });
 
