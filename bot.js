@@ -9,7 +9,11 @@ bot.on("ready", async () => {
 bot.on("message", async message => {
 
   if (message.author.bot) return;
-  if (message.channel.type === "dm") return;
+  /*
+  if (message.channel.type == "dm" && message.author.id == "grox_id"){
+    message.channel.send(":ok_hand:");
+  }
+  */
 
   if(message.content == 'pek'){
     message.channel.send("ahu");
@@ -19,7 +23,7 @@ bot.on("message", async message => {
     message.channel.send("pek");
   }
   
-  else if(message.content == 'kwek'){
+  else if(message == 'kwek'){
     message.channel.send(":horse:");
   }
 });
