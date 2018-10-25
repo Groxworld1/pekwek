@@ -15,8 +15,8 @@ bot.on("ready", async () => {
 });
 
 bot.on("message", async message => {
-  var testChannel = bot.channels.get("test_channel");
-  testChannel.send("pek");
+  var testChannel = bot.channels.get("315142564057579521");
+  testChannel.send("DiOwO");
 });
 
 bot.login(process.env.token);
