@@ -19,12 +19,10 @@ bot.on("message", async message => {
   
   if(message.content == 'pek'){
     message.channel.send("ahu");
-    break;
   }
   
   else if(message.content == 'ahu'){
     message.channel.send("pek");
-    break;
   }
 });
 
