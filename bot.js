@@ -13,10 +13,6 @@ bot.on("ready", () => {
   
   //The activity
   bot.user.setActivity(`with ducks`);
-  
-  //Test message
-  var testChannel = bot.channels.get("315142564057579521");
-  testChannel.send("DiOwO");
 });
 
 bot.on("message", (receivedMessage) => {
