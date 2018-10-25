@@ -5,7 +5,7 @@ bot.on("ready", async () => {
   console.log(`${bot.user.username} is online!`);
 
   console.log("Servers to quack:");
-  client.guilds.forEach((guild) => {
+  bot.guilds.forEach((guild) => {
     console.log(" - " + guild.name);
   })
 
