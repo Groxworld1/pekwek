@@ -16,7 +16,7 @@ bot.on("ready", () => {
 });
 
 bot.on("message", (receivedMessage) => {
-  if (receivedMessage.author == bot.user){
+  if (receivedMessage.author.id == "187880052178944000"){
     return;
   }
   
