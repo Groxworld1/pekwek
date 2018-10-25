@@ -33,7 +33,7 @@ bot.on("message", (receivedMessage) => {
     receivedMessage.channel.send("pek");
   }
     
-  receivedMessage.channel.send("Message received " + receivedMessage.content);
+  // receivedMessage.channel.send("Message received " + receivedMessage.content);
 });
 
 bot.login(process.env.token);
