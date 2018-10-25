@@ -9,11 +9,11 @@ bot.on("ready", async () => {
 bot.on("message", async message => {
 
   if (message.author.bot) return;
-  /*
-  if (message.channel.type == 1 && message.author.id == "grox_id"){
+  
+  if (message.channel.type == 1 && message.author.id == grox_id){
     message.channel.send(":ok_hand:");
   }
-  */
+  
 
   if(message.content == 'pek'){
     message.channel.send("ahu");
