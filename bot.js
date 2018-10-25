@@ -23,7 +23,7 @@ bot.on("message", (receivedMessage) => {
     return;
   }
     
-  receivedMessage.channel.send("Message received " + receivedMessage.content);
+  receivedMessage.testChannel.send("Message received " + receivedMessage.content);
 });
 
 bot.login(process.env.token);
