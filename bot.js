@@ -8,11 +8,6 @@ bot.on("ready", async () => {
   console.log("Servers to quack:");
   bot.guilds.forEach((guild) => {
     console.log(" - " + guild.name);
-
-    guild.channels.forEach((channel) => {
-      console.log("  -  ${test_channel.name} (${test_channel.type}) - ${test_channel.id}");
-    })
-  })
 });
 
 bot.on("message", async message => {
