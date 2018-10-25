@@ -10,7 +10,7 @@ bot.on("ready", async () => {
     console.log(" - " + guild.name);
 
     guild.channels.forEach((channel) => {
-      console.log(`  -  ${channel.name} (${channel.type}) - ${channel.id}`);
+      console.log("  -  ${channel.name} (${channel.type}) - ${channel.id}");
     })
   })
 });
