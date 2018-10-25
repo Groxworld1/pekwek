@@ -8,7 +8,7 @@ bot.on("ready", async () => {
 
 bot.on("message", async message => {
   
-  if (message.channel.type == 1 || message.content == 'OwO'){
+  if (channel.type == 1 || message.content == 'OwO'){
     message.channel.send(":ok_hand:");
   }
 
