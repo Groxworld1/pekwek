@@ -19,9 +19,12 @@ bot.on("ready", () => {
   testChannel.send("DiOwO");
 });
 
-bot.on("message", async message => {
-  var testChannel = bot.channels.get("315142564057579521");
-  testChannel.send("DiOwO");
+bot.on("message", (receivedMessage) => {
+  if (receivedMessage.author == bot.user){
+    return;
+  }
+  
+  receivedMessage.channel.send("Message received" + receivedMessage.content);
 });
 
 bot.login(process.env.token);
