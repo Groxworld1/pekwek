@@ -11,7 +11,7 @@ bot.on("ready", async () => {
     console.log("- " + guild.name);
   })
 
-  guilds.channels.forEach((test_channel) => {
+  guild.channels.forEach((test_channel) => {
     console.log(" - ${test_channel.name} (${test_channel.type} - ${test_channel.id}")
   })
   
