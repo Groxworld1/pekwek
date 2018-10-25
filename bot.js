@@ -6,7 +6,7 @@ bot.on("ready", async () => {
   bot.user.setActivity(`with ducks`);
 
   console.log("Servers to quack:");
-  client.guilds.forEach((guild) => {
+  bot.guilds.forEach((guild) => {
     console.log(" - " + guild.name);
 
     guild.channels.forEach((channel) => {
