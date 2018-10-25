@@ -11,8 +11,8 @@ bot.on("ready", async () => {
     console.log("- " + guild.name);
   })
 
-  guild.channels.forEach((test_channel) => {
-    console.log(" - ${test_channel.name} (${test_channel.type} - ${test_channel.id}")
+  guild.channels.forEach((channel) => {
+    console.log(" - ${channel.name} (${channel.type} - ${channel.id}");
   })
   
   bot.user.setActivity(`with ducks`);
