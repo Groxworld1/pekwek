@@ -7,12 +7,12 @@ bot.on("ready", async () => {
 });
 
 bot.on("message", async message => {
-  
-  if (message.channel.type == 1 && message.content == 'OwO'){
+
+  if (get.message.channel.type == 1 || message.content == 'OwO'){
     message.channel.send(":ok_hand:");
   }
 
-  if(message.content == 'pek'){
+  else if(message.content == 'pek'){
     message.channel.send("ahu");
   }
   
