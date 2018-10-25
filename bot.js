@@ -2,13 +2,19 @@ const Discord = require("discord.js");
 const bot = new Discord.Client({disableEveryone: true});
 
 bot.on("ready", async () => {
+  //Tells you if DuckBot is online and running
   console.log(`${bot.user.username} is online!`);
 
+  //Checks server where DuckBot is in
   console.log("Servers to quack:");
   bot.guilds.forEach((guild) => {
-    console.log(" - " + guild.name);
+    console.log("- " + guild.name);
   })
 
+  guilds.channels.forEach((test_channel) => {
+    console.log(" - ${test_channel.name} (${test_channel.type} - ${test_channel.id}")
+  })
+  
   bot.user.setActivity(`with ducks`);
 });
 
