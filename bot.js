@@ -25,6 +25,7 @@ bot.on("message", (receivedMessage) => {
   }
   */
   
+  /*
   if(receivedMessage.content == "pek"){
     receivedMessage.channel.send("ahu");
   }
@@ -32,6 +33,7 @@ bot.on("message", (receivedMessage) => {
   else if(receivedMessage.content == "ahu"){
     receivedMessage.channel.send("pek");
   }
+  */
     
   // receivedMessage.channel.send("Message received " + receivedMessage.content);
 });
