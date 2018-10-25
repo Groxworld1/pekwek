@@ -3,11 +3,13 @@ const bot = new Discord.Client({disableEveryone: true});
 
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online!`);
-  bot.user.setActivity(`with ducks`);
 
   console.log("Servers to quack:");
-  bot.guilds.forEach((guild) => {
+  client.guilds.forEach((guild) => {
     console.log(" - " + guild.name);
+  })
+
+  bot.user.setActivity(`with ducks`);
 });
 
 bot.on("message", async message => {
