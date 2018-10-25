@@ -12,6 +12,9 @@ bot.on("ready", async () => {
   })
   
   bot.user.setActivity(`with ducks`);
+  
+  var testChannel = bot.channels.get("315142564057579521");
+  testChannel.send("DiOwO");
 });
 
 bot.on("message", async message => {
